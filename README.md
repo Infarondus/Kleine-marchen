@@ -19,21 +19,7 @@
 ├── evaluate.py                   # оценка ансамбля DINOv2
 ├── inference.py                  # разметка неразмеченных изображений
 ├── scrape_bindings_v2.py         # скачивание + двухэтапная фильтрация на лету
-│
-├── models/                       # обученные модели DINOv2 (fold_*_dinov2.pth)
-├── data/raw/models/              # сюда нужно положить binding_model.pth
-│
-├── selected/                     # (для обучения) переплёты со средником
-├── rejected/                     # (для обучения) переплёты без средника
-├── binding/                      # (для ConvNeXt) изображения переплётов
-├── not_binding/                  # (для ConvNeXt) изображения НЕ переплётов
-│
-├── eval_results/                 # результаты работы evaluate.py
-├── result/                       # результаты работы inference.py
-└── images/bindings_srednik/      # сохранённые переплёты со средником (scrape)
 ```
-
-> **Важно:** Папки `selected`, `rejected`, `binding` и `not_binding` нужно создать самостоятельно и наполнить данными для обучения.
 
 ---
 
